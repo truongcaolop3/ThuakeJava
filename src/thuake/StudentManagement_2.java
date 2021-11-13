@@ -112,8 +112,7 @@ public class StudentManagement_2 {
         Student_2[] ReadFile = stlist.doc(n);
         // Hien thi sau khi doc file
         System.out.println("Doc file fileBynory thanh cong! ");
-        
-            System.out.println(ReadFile);
+        System.out.println(ReadFile);
         
     } 
 }

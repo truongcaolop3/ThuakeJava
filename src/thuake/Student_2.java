@@ -91,8 +91,16 @@ public class Student_2 extends Person_2{
         if(getGba() > arg0.getGba() ) {
             return 1;
         }
-        else if (getGba() < arg0.getGba()){
-            return 0;
+        else if(getGba() == arg0.getGba()) {
+            if(getSocial_actvities() > arg0.getSocial_actvities()) {
+                    return 1;
+            }
+            else if(getSocial_actvities() == arg0.getSocial_actvities()) {
+                    return 0;
+            }
+            else {
+                    return -1;
+            }
         }
         return -1;
     }
