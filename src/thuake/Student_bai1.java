@@ -5,13 +5,14 @@
  */
 package thuake;
 
+import java.io.Serializable;
 import java.util.Scanner;
 import thuake.PersonBai_1;
 /**
  *
  * @author DELL
  */
-public class Student_bai1 extends PersonBai_1{
+public class Student_bai1 extends PersonBai_1 implements Serializable{
     
     private String studentID;
 	private int academic_year;
@@ -21,6 +22,12 @@ public class Student_bai1 extends PersonBai_1{
 	 */
 	
         
+
+    @Override
+    public String toString() {
+        return "Student_bai1{" + "studentID=" + studentID + ", academic_year=" + academic_year + '}';
+    }
+
     public Student_bai1() {
     }
 
@@ -58,5 +65,6 @@ public class Student_bai1 extends PersonBai_1{
         System.out.println("Academic year: " + getAcademic_year());
         System.out.println();
     }
+    
 
 }

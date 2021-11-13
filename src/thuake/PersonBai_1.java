@@ -54,7 +54,7 @@ public class PersonBai_1 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("name: ");
         name = scanner.nextLine();
-        System.out.print("gender(0 la nam / 1 nam nu): ");
+        System.out.print("gender(0 la nam / 1 la nu): ");
         gender = scanner.next().charAt(0);
         System.out.print("birth year: ");
         birth_year = scanner.nextInt();
